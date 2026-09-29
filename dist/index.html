@@ -254,15 +254,19 @@
       .qualities { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 620px) {
+      :root { --serif: Georgia, 'Times New Roman', serif; }
       .wrap { width: min(100% - 1.5rem, 1160px); }
       .areas-wrap { width: min(100% - 1.5rem, 1580px); }
       .areas-section { padding-block: 3.4rem; }
-      .areas-section .section-head h2 { font-size: clamp(2.3rem, 9vw, 3.4rem); }
+      .areas-section .section-head h2 { font-size: clamp(2rem, 7.8vw, 2.55rem); line-height: 1.12; letter-spacing: -.03em; }
+      .areas-people-heading h3, .areas-institutions > h3 { font-size: 1.65rem; line-height: 1.2; }
+      .area-item h4 { font-size: 1.22rem; line-height: 1.3; }
+      .area-item p { color: #4c5b51; font-size: 1rem; line-height: 1.65; }
       .areas-people-grid { grid-template-columns: 1fr; }
       .areas-institutions { padding: 1.5rem; border-radius: 18px; }
       .areas-institutions .area-item { padding: 1.2rem 0; }
       .principles-wrap { width: min(100% - 1.5rem, 580px); gap: 1.7rem; }
-      .principles-intro h2 { font-size: clamp(2.7rem, 10vw, 3.8rem); }
+      .principles-intro h2 { font-size: clamp(2.15rem, 8.4vw, 2.8rem); line-height: 1.06; }
       .qualities { grid-template-columns: 1fr; }
       .quality { padding: 1rem 0; }
       .topbar-inner { width: min(100% - 1.5rem, 580px); }
@@ -270,17 +274,17 @@
       .topbar .brand-name { font-size: .9rem; }
       .topbar .brand-name small { font-size: .61rem; letter-spacing: .035em; }
       .topbar .header-cta { min-height: 38px; padding-inline: .72rem; font-size: .82rem; }
-      .topbar nav a:not(.header-cta) { flex: 1 1 0; min-width: 0; padding: .2rem .1rem; font-size: .79rem; }
+      .topbar nav a:not(.header-cta) { flex: 1 1 0; min-width: 0; padding: .2rem .1rem; font-size: .82rem; }
       .hero-grid { padding: .85rem 0 1.2rem; }
       .hero-panel { width: min(100% - 2rem, 580px); }
-      .hero-title { font-size: clamp(2.3rem, 9.6vw, 3.75rem); letter-spacing: -.06em; }
+      .hero-title { font-size: clamp(2.05rem, 8.2vw, 2.8rem); letter-spacing: -.055em; line-height: 1.06; }
       .hero-copy { margin-bottom: 1rem; }
       .hero .button { min-height: 50px; }
       .hero-photo-wrap { width: min(100% - 2rem, 390px); margin-top: 2.25rem; }
       .hero-photo-frame { border-radius: 22px 22px 22px 8px; }
       .about-copy { padding: 2.35rem 1rem 1.35rem; }
       .about-eyebrow { margin-bottom: .85rem; }
-      .about-title { margin-bottom: .9rem; font-size: clamp(2.45rem, 9.8vw, 3.55rem); line-height: 1.02; }
+      .about-title { margin-bottom: .9rem; font-size: clamp(2.05rem, 8.2vw, 2.8rem); line-height: 1.08; }
       .about-lede { font-size: 1.05rem; }
       .life-stage { min-height: 48px; padding-inline: .3rem; font-size: clamp(.91rem, 3.1vw, 1.15rem); white-space: normal; text-align: center; }
       .pillars, .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
@@ -313,6 +317,7 @@
     }
     @media (max-width: 620px) {
       #atendimentos, .principles-section { padding-block: 3rem; }
+      .profile-title, .about-details-title, .booking-copy h2, .assessment-title { font-size: clamp(2.05rem, 8.2vw, 2.8rem); line-height: 1.08; }
       .section-head { margin-bottom: 1.45rem; }
       .section-head h2 { overflow-wrap: break-word; }
       .footer-strip-inner { width: min(100% - 1.5rem, 580px); padding: .95rem 0; }
@@ -321,13 +326,11 @@
       .footer-strip-links a { font-size: .82rem; }
       .booking-section { padding-block: 3.5rem; }
       .booking-wrap { width: min(100% - 1.5rem, 580px); gap: 1.5rem; }
-      .booking-copy h2 { font-size: clamp(2.55rem, 10vw, 3.5rem); }
       .booking-card { padding: 1.2rem; border-radius: 17px; }
       .booking-link { min-height: 60px; gap: .4rem; padding-inline: .65rem; font-size: clamp(1rem, 4.6vw, 1.2rem); white-space: nowrap; }
       .assessment-content { padding: 2.6rem 1.1rem 2.1rem; }
-      .assessment-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
       .assessment-observes li { min-height: 64px; font-size: clamp(1.1rem, 5vw, 1.35rem); }
-      .assessment-audience { display: block; font-size: .9rem; }
+      .assessment-audience { display: block; font-size: .95rem; }
       .assessment-audience-label { margin-bottom: .2rem; font-weight: 600; }
       .assessment-audience-items { display: block; }
       .format-card { min-height: 0; padding: 1rem 1.1rem; }
@@ -339,8 +342,7 @@
       .topbar-inner { column-gap: .35rem; }
       .topbar .brand-name { font-size: .82rem; }
       .topbar .brand-name small { font-size: .55rem; letter-spacing: 0; }
-      .topbar nav a:not(.header-cta) { font-size: .74rem; }
-      .hero-title { font-size: 2.25rem; }
+      .topbar nav a:not(.header-cta) { font-size: .78rem; }
       .assessment-observes { grid-template-columns: 1fr; }
       .assessment-observes li { min-height: 48px; border-bottom: 1px solid rgba(104,119,103,.3); }
       .assessment-observes li:nth-child(odd) { padding-right: 0; border-right: 0; }
