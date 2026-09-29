@@ -3,259 +3,610 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Consultoria educacional, psicopedagogia, neuropsicopedagogia e desenvolvimento humano com atuação ética, científica e personalizada.">
-  <meta name="theme-color" content="#123e48">
+  <meta name="description" content="Atendimento psicopedagógico e consultoria educacional com Josineide Belisário Xavier Barela.">
+  <meta name="theme-color" content="#f7f7f1">
   <link rel="canonical" href="https://josineide-belisario-xavier-barela.franciscoemil730.chatgpt.site/">
-  <title>Josineide Belisário Xavier Barela | Aprendizagem e desenvolvimento</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23123e48'/%3E%3Cpath d='M23 16v22c0 7-4 11-11 11M41 16v33M41 32c0-8 5-14 12-14' fill='none' stroke='%23d5eb80' stroke-linecap='round' stroke-linejoin='round' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23454743'/%3E%3Cpath d='M23 16v22c0 7-4 11-11 11M41 16v33M41 32c0-8 5-14 12-14' fill='none' stroke='%23c6c1b8' stroke-linecap='round' stroke-linejoin='round' stroke-width='5'/%3E%3C/svg%3E">
+  <title>JB Consultoria &amp; Bem-Estar | Josineide Belisário Xavier Barela</title>
   <style>
     :root {
       color-scheme: light;
-      --ink: #163a41;
-      --muted: #5d7475;
-      --deep: #123e48;
-      --teal: #266b70;
-      --mint: #e7efea;
-      --paper: #f7f8f4;
-      --white: #fff;
-      --lime: #d5eb80;
-      --line: #dce5de;
-      --serif: Georgia, 'Times New Roman', serif;
-      --sans: 'Segoe UI', Arial, sans-serif;
+      --ink: #26382e;
+      --muted: #58685e;
+      --soft: #768075;
+      --accent: #68745b;
+      --accent-dark: #1d392c;
+      --stone: #9b968c;
+      --stone-light: #d4d0c7;
+      --paper: #efede5;
+      --paper-page-color: #f1eee7;
+      --paper-sheet-color: #e9e3d7;
+      --paper-sheet-texture: repeating-linear-gradient(2deg, rgba(92,76,52,.025) 0 1px, transparent 1px 5px), radial-gradient(ellipse at 18% 14%, rgba(255,255,255,.18), transparent 58%), linear-gradient(138deg,#eee8dc,#e6dfd2);
+      --white: #fbfaf6;
+      --line: rgba(38, 56, 46, .13);
+      --glass: rgba(251, 250, 246, .72);
+      --serif: 'Bodoni MT', Didot, Baskerville, Georgia, 'Times New Roman', serif;
+      --sans: Aptos, 'Segoe UI', Arial, sans-serif;
     }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
-    body { margin: 0; color: var(--ink); background: var(--paper); font: 1rem/1.65 var(--sans); }
+    html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+    body { margin: 0; background: #f7f6f1; color: var(--ink); font: 1rem/1.68 var(--sans); }
     a { color: inherit; }
+    img { display: block; max-width: 100%; }
     .wrap { width: min(1160px, calc(100% - 2.5rem)); margin-inline: auto; }
-    .topbar { background: var(--paper); border-bottom: 1px solid var(--line); }
-    .topbar-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-    .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; min-width: max-content; }
-    .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px; background: var(--deep); color: var(--lime); font: 700 1rem var(--serif); letter-spacing: -.06em; }
-    .brand-name { font-size: .91rem; font-weight: 700; line-height: 1.2; letter-spacing: .015em; }
-    nav { display: flex; align-items: center; gap: clamp(.8rem, 2.1vw, 1.7rem); }
-    nav a { color: var(--muted); font-size: .875rem; text-decoration: none; white-space: nowrap; }
-    nav a:hover, nav a:focus-visible { color: var(--deep); text-decoration: underline; text-underline-offset: .25em; }
-    .hero { padding: clamp(3rem, 7vw, 6.7rem) 0 clamp(3.5rem, 7vw, 6rem); overflow: hidden; }
-    .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; align-items: center; gap: clamp(2.5rem, 6vw, 5.5rem); }
-    .eyebrow { margin: 0 0 1rem; color: var(--teal); font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .topbar { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: rgba(249, 248, 243, .92); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .topbar-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; }
+    .brand { display: flex; align-items: center; text-decoration: none; flex: 0 0 auto; }
+    .brand-name { color: var(--accent-dark); font: 400 1.02rem/1.2 var(--serif); }
+    .brand-name small { display: block; margin-top: .2rem; color: var(--muted); font: 600 .75rem/1.2 var(--sans); letter-spacing: .07em; text-transform: uppercase; }
+    .topbar nav { display: flex; align-items: center; justify-content: flex-end; gap: .45rem; }
+    .topbar nav a:not(.header-cta) { display: inline-flex; min-height: 40px; align-items: center; justify-content: center; padding: .4rem .55rem; border: 0; border-radius: 0; background: transparent; color: #445448; font-size: .88rem; text-decoration: none; white-space: nowrap; transition: color .18s ease; }
+    .topbar nav a:not(.header-cta):hover { color: #203b2e; }
+    .header-cta { min-height: 42px; padding-inline: .9rem; border-radius: 999px; white-space: nowrap; }
+    :focus-visible { outline: 3px solid #908a80; outline-offset: 3px; }
+    .hero { --hero-frame-height: max(680px, calc(100svh - 76px)); position: relative; z-index: 1; isolation: isolate; overflow: visible; min-height: var(--hero-frame-height); padding: 0; background: #f7f7f1; color: #263a2f; }
+    .hero-grid { --hero-panel-top: clamp(5.5rem, 14vh, 8rem); --hero-title-size: clamp(3.4rem, 6.7vw, 7.2rem); position: relative; display: block; width: 100%; min-height: inherit; margin: 0; }
+    .hero-panel { position: relative; z-index: 3; width: min(68%, 900px); padding: var(--hero-panel-top) 0 0 clamp(2.5rem, 6vw, 6.25rem); border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+    .eyebrow { margin: 0 0 .85rem; color: var(--soft); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
     h1, h2, h3, p { margin-top: 0; }
-    h1, h2, h3 { color: var(--deep); }
-    h1 { max-width: 680px; margin-bottom: 1.2rem; font: 400 clamp(2.5rem, 5vw, 4.5rem)/1.08 var(--serif); letter-spacing: -.045em; }
-    h1 em { color: var(--teal); font-style: normal; }
-    .hero-copy { max-width: 600px; color: var(--muted); font-size: clamp(1.05rem, 1.5vw, 1.2rem); }
-    .hero-services { max-width: 560px; margin: 1.4rem 0 1.8rem; color: var(--ink); font-size: .95rem; }
-    .actions { display: flex; flex-wrap: wrap; gap: .75rem; }
-    .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; padding: .75rem 1.2rem; border: 1px solid var(--deep); border-radius: 999px; background: var(--deep); color: var(--white); font-size: .95rem; font-weight: 650; text-align: center; text-decoration: none; transition: transform .18s ease, background .18s ease; }
-    .button:hover { transform: translateY(-2px); background: #205660; }
-    .button:focus-visible, a:focus-visible { outline: 3px solid #91ad34; outline-offset: 3px; }
-    .button.secondary { background: transparent; color: var(--deep); }
-    .button.secondary:hover { background: var(--mint); }
-    .hero-visual { position: relative; min-height: 420px; }
-    .hero-photo { position: absolute; inset: 0 5% 4% 0; width: 95%; height: 96%; border-radius: 44% 44% 18px 18px; object-fit: cover; }
-    .visual-note { position: absolute; right: 0; bottom: 0; width: min(240px, 58%); padding: 1.1rem 1.2rem; border-radius: 16px; background: var(--lime); color: var(--deep); box-shadow: 0 15px 36px #163a4118; font: 400 1.05rem/1.35 var(--serif); }
-    .section { padding: clamp(4rem, 8vw, 7rem) 0; }
-    .section.tint { background: #edf2ee; }
-    .section.dark { background: var(--deep); color: #edf5ee; }
-    .section.dark h2, .section.dark h3 { color: var(--white); }
-    .section-head { max-width: 700px; margin-bottom: 2.5rem; }
-    h2 { margin-bottom: .8rem; font: 400 clamp(2rem, 4vw, 3.25rem)/1.12 var(--serif); letter-spacing: -.035em; }
-    .section-intro { margin: 0; max-width: 700px; color: var(--muted); font-size: 1.05rem; }
-    .dark .section-intro { color: #c2d4d0; }
-    .intro-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 3rem; align-items: start; }
-    .story { max-width: 620px; color: var(--muted); font-size: 1.05rem; }
-    .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    .pillar { padding: 1.25rem; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
-    .pillar h3 { margin-bottom: .45rem; font: 700 .94rem var(--sans); }
-    .pillar p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
-    .sectors { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.6rem; }
-    .sector { padding: .55rem .85rem; border-radius: 999px; background: var(--mint); color: var(--deep); font-size: .875rem; font-weight: 650; }
-    .profile { display: grid; grid-template-columns: minmax(240px, .75fr) 1.25fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
-    .profile-card { display: grid; place-items: center; min-height: 330px; padding: 2rem; border-radius: 22px; background: var(--mint); text-align: center; }
-    .initials { display: grid; place-items: center; width: 150px; aspect-ratio: 1; border: 1px solid #bdd2c5; border-radius: 50%; background: var(--deep); color: var(--lime); font: 400 3.1rem var(--serif); letter-spacing: -.07em; }
-    .profile-card p { max-width: 230px; margin: 1rem 0 0; color: var(--muted); font-size: .88rem; }
-    .profile h2 { max-width: 640px; }
-    .credentials { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem 1.25rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
-    .credentials li { position: relative; padding-left: 1.2rem; color: var(--muted); }
-    .credentials li::before { position: absolute; left: 0; top: .75rem; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); content: ''; }
-    .areas-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-    .area { padding: clamp(1.35rem, 2.5vw, 2rem); border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
-    .area-number { display: inline-block; margin-bottom: .8rem; color: var(--teal); font: 400 1.25rem var(--serif); }
-    .area h3 { margin-bottom: .7rem; font: 400 1.55rem/1.2 var(--serif); }
-    .area p { margin: 0; color: var(--muted); font-size: .96rem; }
-    .area ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .35rem 1rem; margin: .9rem 0 0; padding: 0; list-style: none; color: var(--muted); font-size: .92rem; }
-    .area li { position: relative; padding-left: .95rem; }
-    .area li::before { position: absolute; left: 0; color: var(--teal); content: '·'; font-weight: 700; }
-    .audience { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2rem; }
-    .audience span { padding: .7rem 1rem; border: 1px solid #4b7174; border-radius: 999px; color: #edf5ee; font-size: .95rem; }
-    .contact { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border-radius: 22px; background: var(--lime); }
-    .contact h2 { margin-bottom: .5rem; color: var(--deep); }
-    .contact p { max-width: 600px; margin-bottom: 0; color: #375a55; }
-    .contact .button { border-color: var(--deep); }
-    footer { padding: 1.6rem 0; color: var(--muted); font-size: .84rem; }
-    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 2rem; }
-    .footer-inner p { margin: 0; }
-    @media (max-width: 860px) {
-      .topbar-inner { align-items: flex-start; flex-direction: column; gap: .5rem; padding: 1rem 0 .7rem; }
-      nav { width: 100%; overflow-x: auto; padding: .35rem 0; }
-      .hero-grid { grid-template-columns: 1fr; }
-      .hero-visual { min-height: min(68vw, 460px); }
-      .intro-grid, .profile { grid-template-columns: 1fr; gap: 2rem; }
-      .profile-card { min-height: 260px; }
-      .contact { grid-template-columns: 1fr; }
+    h1, h2, h3 { color: var(--accent-dark); }
+    h1 { max-width: 730px; margin-bottom: 1rem; font: 500 clamp(2.45rem, 4.5vw, 3.9rem)/1.09 var(--sans); letter-spacing: -.05em; }
+    h1 em { color: #73736e; font-style: normal; }
+    h2 { margin-bottom: .75rem; font: 550 clamp(2rem, 3.7vw, 3rem)/1.1 var(--sans); letter-spacing: -.055em; }
+    h3 { margin-bottom: .55rem; font: 600 1.28rem/1.28 var(--sans); letter-spacing: -.025em; }
+    .hero-copy { max-width: 620px; margin-bottom: .8rem; color: var(--muted); font-size: 1.06rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+    .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; padding: .72rem 1.2rem; border: 1px solid var(--accent); border-radius: 999px; background: var(--accent); color: var(--white); font: 600 .94rem/1.2 var(--sans); text-align: center; text-decoration: none; box-shadow: 0 6px 18px rgba(29,57,44,.11); transition: background .18s ease, border-color .18s ease, transform .18s ease; }
+    .button:hover { transform: translateY(-1px); border-color: var(--accent-dark); background: var(--accent-dark); }
+    .button.secondary { border-color: rgba(50,73,57,.2); background: rgba(250,249,245,.78); color: var(--accent-dark); box-shadow: none; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .button.secondary:hover { background: rgba(255,254,250,.96); }
+    .section { padding: clamp(3.6rem, 6vw, 5.25rem) 0; }
+    .section.alt { background: #eeece4; }
+    .section.dark { background: #243e31; color: #f3f2ec; }
+    .section.dark h2, .section.dark h3 { color: #faf9f4; }
+    .section-head { max-width: 710px; margin-bottom: 2rem; }
+    .section-intro { max-width: 660px; margin: 0; color: var(--muted); font-size: 1.03rem; }
+    .dark .section-intro { color: #e3e2df; }
+    .profile-grid { position: relative; z-index: 1; display: grid; width: min(1580px, calc(100% - 3rem)); max-width: none; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); align-items: center; gap: clamp(3rem, 7vw, 8rem); margin-inline: auto; }
+    .story { max-width: 670px; color: var(--muted); font-size: 1.02rem; }
+    .pillars { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: clamp(.65rem, 1.35vw, 1.15rem); }
+    .glass-card { border: 1px solid rgba(37,63,46,.1); background: rgba(251,250,246,.7); box-shadow: 0 12px 32px rgba(29,57,44,.055), inset 0 1px 0 rgba(255,255,255,.8); backdrop-filter: blur(16px) saturate(110%); -webkit-backdrop-filter: blur(16px) saturate(110%); }
+    .pillar h3 { margin-bottom: .85rem; color: #243d30; font: 500 clamp(1.35rem, 1.8vw, 1.75rem)/1.1 var(--serif); letter-spacing: -.035em; }
+    .pillar p { max-width: 16rem; margin: 0; color: var(--muted); font-size: .98rem; line-height: 1.6; }
+    .sectors { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.25rem; }
+    .sector { padding: .45rem .75rem; border: 1px solid rgba(63,63,59,.18); border-radius: 999px; color: var(--muted); font-size: .9rem; }
+    .credentials { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem 1.1rem; margin: 1.3rem 0 0; padding: 0; list-style: none; }
+    .credentials li { position: relative; padding-left: 1rem; color: var(--ink); }
+    .credentials li::before { position: absolute; left: 0; top: .8rem; width: 5px; height: 5px; border-radius: 50%; background: #9c9991; content: ''; }
+    .grid-2, .grid-3, .grid-4 { display: grid; gap: .9rem; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .format-card { min-height: 132px; padding: 1.15rem; }
+    .format-card h3 { color: var(--accent); }
+    .format-card p { margin: 0; color: var(--muted); font-size: .96rem; }
+    .areas-section { background: #f7f6f1; }
+    .areas-wrap { width: min(1580px, calc(100% - 3rem)); max-width: none; margin-inline: auto; }
+    .areas-layout { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(19rem, 1fr); align-items: stretch; gap: clamp(2rem, 3.2vw, 3.8rem); }
+    .areas-section .section-head { max-width: none; margin-bottom: 2.1rem; }
+    .areas-section .section-head h2 { max-width: 1120px; margin-bottom: 0; font: 400 clamp(2.55rem, 4vw, 4.5rem)/1.03 var(--serif); letter-spacing: -.04em; }
+    .areas-people-heading { display: grid; grid-template-columns: auto minmax(2rem, 1fr); align-items: center; gap: 1.15rem; margin-bottom: .6rem; }
+    .areas-people-heading h3, .areas-institutions > h3 { margin: 0; color: var(--accent-dark); font: 400 clamp(1.9rem, 2.6vw, 2.7rem)/1.15 var(--serif); letter-spacing: -.035em; }
+    .areas-people-heading::after { height: 1px; background: rgba(93,111,89,.62); content: ''; }
+    .areas-people-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(1.5rem, 3.8vw, 3.5rem); }
+    .area-item { min-width: 0; padding: 1.35rem .45rem 1.45rem; border-bottom: 1px solid rgba(93,111,89,.48); }
+    .area-item h4 { margin: 0 0 .55rem; color: var(--accent-dark); font: 400 clamp(1.35rem, 1.8vw, 1.85rem)/1.22 var(--serif); letter-spacing: -.025em; }
+    .area-item p { margin: 0; color: var(--muted); font-size: clamp(1rem, 1.35vw, 1.25rem); line-height: 1.55; }
+    .areas-institutions { align-self: stretch; padding: clamp(2rem, 3vw, 3.5rem); border-radius: 24px; background: #e9ebe2; }
+    .areas-institutions > h3 { padding-bottom: .8rem; border-bottom: 1px solid rgba(93,111,89,.65); }
+    .areas-institutions .area-item { padding: 1.55rem 0; }
+    .areas-institutions .area-item:last-child { padding-bottom: 0; border-bottom: 0; }
+    .booking-section { padding-block: clamp(4.3rem, 8vw, 7.25rem); background: radial-gradient(ellipse at 78% 20%, rgba(255,255,255,.055), transparent 48%), #203b2d; color: #f6f4ed; }
+    .booking-wrap { display: grid; width: min(1580px, calc(100% - 3rem)); max-width: none; grid-template-columns: minmax(0, 1.25fr) minmax(22rem, .9fr); align-items: center; gap: clamp(2.5rem, 5.5vw, 6rem); margin-inline: auto; }
+    .booking-eyebrow { display: grid; max-width: 28rem; grid-template-columns: auto minmax(2rem, 1fr); align-items: center; gap: 1rem; margin-bottom: 1.45rem; }
+    .booking-eyebrow .eyebrow { margin: 0; color: #b5bea7; letter-spacing: .16em; }
+    .booking-eyebrow::after { height: 1px; background: rgba(205,211,192,.4); content: ''; }
+    .booking-copy h2 { max-width: 850px; margin: 0 0 1.05rem; color: #f8f6f0; font: 400 clamp(3rem, 5.1vw, 5.6rem)/1.02 var(--serif); letter-spacing: -.04em; }
+    .booking-copy > p { max-width: 850px; margin: 0; color: rgba(248,246,240,.88); font: 400 clamp(1.12rem, 1.65vw, 1.6rem)/1.45 var(--serif); }
+    .booking-card { padding: clamp(1.4rem, 2.8vw, 2.7rem); border-radius: 20px; background: #f7f5ee; box-shadow: 0 18px 48px rgba(9,26,17,.14); }
+    .booking-link { display: flex; min-height: 76px; align-items: center; justify-content: center; gap: .65rem; padding: 1rem 1.5rem; border-radius: 999px; background: #254332; color: #fffdf7; font: 400 clamp(1.15rem, 1.6vw, 1.55rem)/1.2 var(--serif); text-align: center; text-decoration: none; transition: background .18s ease, transform .18s ease; }
+    .booking-link:hover { transform: translateY(-1px); background: #183729; }
+    .booking-link span { font: 400 1.15em/1 var(--sans); }
+    .booking-card-note { margin: 1.15rem 0 0; padding-top: 1rem; border-top: 1px solid rgba(93,111,89,.25); color: #526257; font-size: .98rem; line-height: 1.5; text-align: center; }
+    .principles-section { position: relative; isolation: isolate; overflow: hidden; background: #f7f6f1; }
+    .principles-section::before { position: absolute; z-index: -1; inset: -24px; background: linear-gradient(rgba(248,247,241,.72), rgba(248,247,241,.72)), url('./avaliacao-caderno.png') center 8% / cover no-repeat; content: ''; filter: blur(18px); opacity: .48; pointer-events: none; }
+    .principles-wrap { display: grid; width: min(1580px, calc(100% - 3rem)); max-width: none; grid-template-columns: minmax(0, .95fr) minmax(0, 1.5fr); align-items: center; gap: clamp(3rem, 7vw, 7rem); margin-inline: auto; }
+    .principles-intro .eyebrow { color: #879176; }
+    .principles-intro h2 { max-width: 610px; margin-bottom: 1rem; color: #1e3b2e; font: 400 clamp(3rem, 5vw, 5rem)/.98 var(--serif); letter-spacing: -.045em; }
+    .principles-intro > p:not(.eyebrow) { max-width: 580px; margin: 0; color: #54685d; font-size: clamp(1rem, 1.35vw, 1.2rem); line-height: 1.55; }
+    .qualities { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(1.75rem, 3.5vw, 3.5rem); }
+    .quality { min-width: 0; padding: 1.15rem 0 1.35rem; border-bottom: 1px solid rgba(115,128,102,.48); color: #213d30; }
+    .quality h3 { margin: 0; color: #213d30; font: 400 clamp(1.3rem, 1.8vw, 1.85rem)/1.22 var(--serif); letter-spacing: -.025em; }
+    footer { border-top: 1px solid rgba(218,222,207,.48); background: #173728; color: #f3f1e8; }
+    .footer-strip-inner { display: flex; width: min(1720px, calc(100% - 4rem)); min-height: 76px; align-items: center; justify-content: space-between; gap: .75rem 2rem; margin-inline: auto; }
+    .footer-strip-copy { flex: 0 1 auto; max-width: 100%; margin: 0; color: rgba(245,241,231,.9); font: 400 .96rem/1.4 var(--serif); letter-spacing: .025em; }
+    .footer-strip-links { display: flex; align-items: center; justify-content: flex-end; gap: clamp(.75rem, 1.4vw, 1.4rem); }
+    .footer-strip-links a { color: #e9e9de; font-size: .86rem; text-decoration: none; text-underline-offset: .25em; transition: color .18s ease; white-space: nowrap; }
+    .footer-strip-links a:hover { color: #c7d0bb; text-decoration: underline; }
+    .footer-strip-top { color: #c3cbbb !important; font-size: 1rem !important; }
+    .topbar { background: rgba(249,248,243,.92); }
+    .topbar .brand-name { color: #213a2d; }
+    .topbar .header-cta { border-color: #68745b; background: #68745b; color: #fff; }
+    .topbar .header-cta:hover { border-color: #354b3b; background: #354b3b; }
+    #avaliacao { position: relative; z-index: 2; isolation: isolate; }
+    .about-page { padding: 0; background: #f7f7f1; }
+    .about-stage { position: relative; isolation: isolate; height: max(340px, 38vw); overflow: hidden; background: #f7f7f1; }
+    .about-photo-wrap { position: absolute; z-index: 0; inset: 0; margin: 0; clip-path: url(#aboutPhotoClip); }
+    .about-scene { position: absolute; top: 0; right: 0; width: 72%; height: 100%; max-width: none; object-fit: cover; object-position: right top; }
+    .about-route-desktop { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+    .about-route-desktop path { fill: none; stroke: #52583d; stroke-width: clamp(3px, .215vw, 4px); stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; opacity: .9; }
+    .about-copy { position: relative; z-index: 3; width: min(62%, 900px); padding: clamp(5.5rem, 10vh, 7.4rem) 0 2rem clamp(2.5rem, 6vw, 6.25rem); }
+    .about-eyebrow { margin-bottom: 1.25rem; color: #53645a; }
+    .about-title { max-width: 760px; margin: 0 0 1.35rem; color: #18372b; font: 550 clamp(3.1rem, 4.3vw, 4.45rem)/1.04 var(--sans); letter-spacing: -.065em; }
+    .about-lede { max-width: min(35vw, 560px); margin: 0; color: #53645a; font-size: clamp(1.05rem, 1.4vw, 1.35rem); line-height: 1.55; }
+    .about-rail { position: relative; z-index: 4; min-height: 180px; background: #f7f7f1; }
+    .about-rail-inner { display: grid; width: min(1450px, calc(100% - 3rem)); min-height: inherit; grid-template-columns: 1fr; align-items: center; margin-inline: auto; }
+    .life-stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; }
+    .life-stage { display: flex; min-height: 72px; align-items: center; justify-content: center; padding: 0 clamp(1rem, 2vw, 2rem); color: #18372b; font-size: clamp(1.45rem, 2.6vw, 2.5rem); letter-spacing: -.045em; text-align: center; white-space: nowrap; }
+    .life-stage + .life-stage { border-left: 1px solid rgba(91,93,69,.55); }
+    .about-details { overflow: hidden; padding: clamp(4rem, 8vw, 7.5rem) 0; background: var(--paper-page-color); }
+    .about-details-inner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
+    .about-details-intro { position: relative; z-index: 1; }
+    .about-details-title { max-width: 680px; margin: .4rem 0 1.15rem; color: #23382d; font: 500 clamp(2.45rem, 4.3vw, 4rem)/1.06 var(--serif); letter-spacing: -.045em; }
+    .about-details .story { max-width: 540px; margin: 0; color: var(--muted); font-size: clamp(1rem, 1.2vw, 1.18rem); line-height: 1.65; }
+    .pillars-stage { position: relative; min-width: 0; padding: .4rem 0 1rem; perspective: 1200px; }
+    .pillar-thread { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+    .pillar-thread path { fill: none; stroke: #899078; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .pillar-thread circle { fill: #899078; }
+    .pillar { isolation: isolate; min-height: 235px; padding: clamp(1.2rem, 1.8vw, 1.7rem); border: 1px solid rgba(103,94,76,.15); border-top: 1px solid rgba(255,255,255,.92); border-radius: 2px; background-color: var(--paper-sheet-color); background-image: var(--paper-sheet-texture); box-shadow: 0 1px 1px rgba(57,49,37,.08), 0 5px 8px rgba(57,49,37,.07), 0 24px 30px rgba(57,49,37,.13), inset 0 1px 0 rgba(255,255,255,.9); transform-style: preserve-3d; }
+    .pillar::before { position: absolute; z-index: -1; inset: 5px -5px -7px 5px; border: 1px solid rgba(117,105,85,.09); background: linear-gradient(145deg, #eee8dc, #e4ddcf); box-shadow: 0 12px 18px rgba(57,49,37,.08); content: ''; transform: translateZ(-3px); }
+    .pillar::after { position: absolute; right: 0; bottom: 0; width: 25px; height: 25px; background: linear-gradient(135deg, #e5decf 0 48%, #f1ecdf 50% 100%); clip-path: polygon(0 100%, 100% 0, 100% 100%); content: ''; opacity: .8; }
+    .pillar:nth-child(1) { transform: perspective(900px) rotateX(1deg) rotateZ(-.8deg) translateZ(3px); }
+    .pillar:nth-child(2) { margin-top: 2.4rem; transform: perspective(900px) rotateX(1.4deg) rotateZ(.7deg) translateZ(8px); }
+    .pillar:nth-child(3) { margin-top: 4.8rem; transform: perspective(900px) rotateX(1deg) rotateZ(-.6deg) translateZ(5px); }
+    .hero-title { max-width: 850px; margin: 0 0 1.45rem; color: #213a2d; font: 500 var(--hero-title-size)/1.01 var(--sans); letter-spacing: -.067em; }
+    .hero-line { display: block; }
+    .hero-copy { max-width: 35rem; margin-bottom: 1.5rem; color: #53645a; font-size: clamp(1.05rem, 1.35vw, 1.25rem); line-height: 1.55; }
+    .hero-actions { display: flex; }
+    .hero .button { min-height: 54px; gap: 1rem; padding: .8rem 1.35rem; border-color: #68745b; border-radius: 999px; background: #68745b; color: #fff; box-shadow: none; font-weight: 550; }
+    .hero .button:hover { border-color: #354b3b; background: #354b3b; }
+    .hero-button-arrow { font-size: 1.2rem; line-height: 1; transition: transform .18s ease; }
+    .hero .button:hover .hero-button-arrow { transform: translateX(3px); }
+    .topbar-inner { width: min(1450px, calc(100% - 3rem)); }
+    .hero-photo-wrap { position: absolute; z-index: 0; top: 0; right: 0; left: 0; width: 100%; height: var(--hero-frame-height); margin: 0; clip-path: url(#heroPhotoClip); }
+    .hero-photo-frame { position: relative; width: 100%; height: 100%; overflow: hidden; background: #ebe2d5; }
+    .hero-photo { position: absolute; top: 0; right: 0; width: 72%; height: 100%; object-fit: cover; object-position: center 16%; }
+    .assessment-section { display: grid; min-height: clamp(30rem, 37vw, 42rem); grid-template-columns: minmax(0, .96fr) minmax(0, 1.04fr); background: #f7f6f1; }
+    .assessment-photo { min-width: 0; min-height: clamp(30rem, 37vw, 42rem); margin: 0; overflow: hidden; }
+    .assessment-photo img { width: 100%; height: 100%; min-height: inherit; object-fit: cover; object-position: center 58%; }
+    .assessment-content { align-self: center; width: min(100%, 900px); padding: clamp(3rem, 6vw, 7rem) clamp(2.4rem, 6vw, 7rem); }
+    .assessment-eyebrow { margin-bottom: 1.1rem; color: #879186; font-size: .82rem; letter-spacing: .15em; }
+    .assessment-title { max-width: 760px; margin: 0 0 .9rem; color: #1e3b2e; font: 500 clamp(2.8rem, 4.3vw, 4.5rem)/1.04 var(--serif); letter-spacing: -.035em; }
+    .assessment-copy { max-width: 700px; margin: 0; color: #78847a; font-size: clamp(1.05rem, 1.5vw, 1.4rem); line-height: 1.5; }
+    .assessment-observes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 1.55rem 0 0; padding: 0; border-top: 1px solid rgba(104,119,103,.3); list-style: none; }
+    .assessment-observes li { display: flex; min-height: 72px; align-items: center; color: #234335; font: 400 clamp(1.2rem, 1.75vw, 1.65rem)/1.25 var(--serif); }
+    .assessment-observes li:nth-child(-n+2) { border-bottom: 1px solid rgba(104,119,103,.3); }
+    .assessment-observes li:nth-child(odd) { padding-right: 1.2rem; border-right: 1px solid rgba(104,119,103,.3); }
+    .assessment-observes li:nth-child(even) { padding-left: clamp(1rem, 2.4vw, 2rem); }
+    .assessment-audience { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .65rem; margin-top: 1.1rem; color: #859087; font-size: .98rem; }
+    .assessment-audience-label, .assessment-audience-items { margin: 0; }
+    .assessment-audience-items { display: flex; flex-wrap: wrap; gap: 0 .65rem; }
+    .assessment-audience-items span { color: #a2a99f; }
+    .profile-section { position: relative; isolation: isolate; overflow: hidden; padding-block: clamp(4.5rem, 8vw, 7.5rem); background: var(--paper-page-color); }
+    .profile-route { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .profile-route path { fill: none; stroke: #879079; stroke-width: 1.7; stroke-linecap: round; vector-effect: non-scaling-stroke; opacity: .8; }
+    .profile-intro { max-width: 610px; }
+    .profile-intro .eyebrow { color: #77826f; }
+    .profile-title { margin: .7rem 0 1rem; color: #20392e; font: 500 clamp(2.8rem, 4.15vw, 4.45rem)/1.04 var(--serif); letter-spacing: -.045em; }
+    .profile-title-lastline { display: block; }
+    .profile-note { max-width: 560px; margin: 0; color: #596a60; font-size: clamp(1.05rem, 1.4vw, 1.32rem); line-height: 1.65; }
+    .profile-sheet { position: relative; z-index: 1; width: min(100%, 720px); margin-left: auto; padding: clamp(1.7rem, 3vw, 3rem); border: 1px solid rgba(113,101,79,.14); background-color: var(--paper-sheet-color); background-image: var(--paper-sheet-texture); box-shadow: 0 2px 2px rgba(58,49,36,.06), 0 12px 22px rgba(58,49,36,.09), 0 28px 38px rgba(58,49,36,.1), inset 0 1px 0 rgba(255,255,255,.88); clip-path: polygon(.3% .3%, 18% 0, 42% .3%, 70% .1%, 99.7% .3%, 100% 25%, 99.8% 52%, 100% 78%, 99.6% 99.7%, 74% 100%, 48% 99.7%, 23% 100%, .3% 99.7%, 0 72%, .3% 45%, 0 22%); }
+    .profile-group + .profile-group { margin-top: clamp(1.35rem, 2.5vw, 2rem); padding-top: clamp(1.2rem, 2vw, 1.6rem); border-top: 1px solid rgba(104,112,92,.3); }
+    .profile-group-title { margin: 0 0 .8rem; color: #3f5446; font: 700 .82rem/1.4 var(--sans); letter-spacing: .2em; text-transform: uppercase; }
+    .profile-sheet .credentials { grid-template-columns: 1fr; gap: .28rem; margin: 0; }
+    .profile-sheet .credentials li { padding: 0; color: #283e32; font: 400 clamp(1.08rem, 1.4vw, 1.35rem)/1.48 var(--serif); }
+    .profile-sheet .credentials li::before { display: none; }
+    @media (max-width: 1150px) {
+      .profile-grid { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(2rem, 4vw, 4rem); }
+      .profile-title { font-size: clamp(2.7rem, 5vw, 4rem); }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 1150px) {
+      .profile-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .profile-intro { max-width: 650px; }
+      .profile-sheet { margin-inline: 0; }
+      .profile-route { display: none; }
+    }
+    @media (max-width: 620px) {
+      .profile-section { padding-block: 3.2rem; }
+      .profile-title-lastline { display: inline; }
+      .profile-title { font-size: clamp(2.5rem, 10vw, 3.4rem); }
+      .profile-sheet { padding: 1.4rem 1.2rem; }
+    }
+    @media (max-width: 1150px) {
+      .topbar-inner { align-items: flex-start; flex-direction: column; gap: .55rem; padding: .9rem 0 .7rem; }
+      .topbar nav { width: 100%; overflow-x: auto; padding: .25rem 0; justify-content: flex-start; }
+      .topbar-inner { width: min(100% - 2rem, 760px); }
+      .areas-wrap { width: min(100% - 2rem, 1580px); }
+      .principles-wrap { width: min(100% - 2rem, 900px); grid-template-columns: 1fr; gap: 2rem; }
+      .hero { --hero-frame-height: auto; min-height: 0; padding: 0; }
+      .hero-grid { width: 100%; min-height: 0; padding: 1.4rem 0 1.6rem; }
+      .hero-panel { width: min(100% - 3rem, 650px); margin-inline: auto; padding: 0; }
+      .hero-title { font-size: clamp(2.9rem, 7.2vw, 4.2rem); }
+      .hero-photo-wrap { position: relative; top: auto; right: auto; left: auto; width: min(100% - 3rem, 480px); height: auto; margin: 1.5rem auto 0; clip-path: none; }
+      .hero-photo-frame { height: auto; aspect-ratio: 1; border-radius: 24px 24px 24px 8px; }
+      .hero-photo { position: relative; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+      .about-stage { display: flex; height: auto; min-height: 0; flex-direction: column; overflow: hidden; }
+      .about-photo-wrap { position: relative; inset: auto; order: 2; width: 100%; height: auto; aspect-ratio: 1672 / 941; clip-path: url(#aboutMobilePhotoClip); }
+      .about-scene { width: 100%; height: 100%; max-width: 100%; object-fit: cover; }
+      .about-copy { order: 1; width: 100%; padding: 2.8rem 1.5rem 1.6rem; }
+      .about-title { max-width: 700px; font-size: clamp(2.8rem, 7.5vw, 4.1rem); }
+      .about-lede { max-width: 700px; }
+      .about-route-desktop { display: none; }
+      .about-rail { min-height: 0; padding: 1.2rem 0 1.4rem; }
+      .about-rail-inner { width: min(100% - 2rem, 760px); min-height: 0; }
+      .life-stage { min-height: 52px; justify-content: center; padding-inline: .5rem; font-size: clamp(1rem, 2.9vw, 1.35rem); }
+      .about-details { padding: 2.5rem 0 3rem; }
+      .about-details-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+      .pillars-stage { padding-top: .2rem; }
+      .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .qualities { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 620px) {
       .wrap { width: min(100% - 1.5rem, 1160px); }
-      .hero { padding-top: 3rem; }
-      .hero-visual { min-height: 86vw; }
-      .pillars { grid-template-columns: 1fr; }
-      .areas-grid { grid-template-columns: 1fr; }
+      .areas-wrap { width: min(100% - 1.5rem, 1580px); }
+      .areas-section { padding-block: 3.4rem; }
+      .areas-section .section-head h2 { font-size: clamp(2.3rem, 9vw, 3.4rem); }
+      .areas-people-grid { grid-template-columns: 1fr; }
+      .areas-institutions { padding: 1.5rem; border-radius: 18px; }
+      .areas-institutions .area-item { padding: 1.2rem 0; }
+      .principles-wrap { width: min(100% - 1.5rem, 580px); gap: 1.7rem; }
+      .principles-intro h2 { font-size: clamp(2.7rem, 10vw, 3.8rem); }
+      .qualities { grid-template-columns: 1fr; }
+      .quality { padding: 1rem 0; }
+      .topbar-inner { width: min(100% - 1.5rem, 580px); }
+      .hero-grid { padding: .85rem 0 1.2rem; }
+      .hero-panel { width: min(100% - 2rem, 580px); }
+      .hero-title { font-size: clamp(2.3rem, 9.6vw, 3.75rem); letter-spacing: -.06em; }
+      .hero-copy { margin-bottom: 1rem; }
+      .hero .button { min-height: 50px; }
+      .hero-photo-wrap { width: min(100% - 2rem, 390px); margin-top: 1.15rem; }
+      .hero-photo-frame { border-radius: 22px 22px 22px 8px; }
+      .about-copy { padding: 2.35rem 1rem 1.35rem; }
+      .about-eyebrow { margin-bottom: .85rem; }
+      .about-title { margin-bottom: .9rem; font-size: clamp(2.45rem, 9.8vw, 3.55rem); line-height: 1.02; }
+      .about-lede { font-size: 1.05rem; }
+      .life-stage { min-height: 48px; padding-inline: .3rem; font-size: clamp(.91rem, 3.1vw, 1.15rem); white-space: normal; text-align: center; }
+      nav { position: relative; padding-right: 6.25rem; }
+      nav .header-cta { position: absolute; top: 50%; right: 0; transform: translateY(-50%); }
+      nav .header-cta:hover { transform: translateY(-50%); }
+      .pillars, .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .pillar { min-height: 0; }
+      .pillar:nth-child(1), .pillar:nth-child(2), .pillar:nth-child(3) { margin-top: 0; transform: none; }
+      .pillar-thread { display: none; }
       .credentials { grid-template-columns: 1fr; }
-      .area ul { grid-template-columns: 1fr; }
+      .qualities { grid-template-columns: 1fr 1fr; }
       .actions { align-items: stretch; flex-direction: column; }
-      .button { width: 100%; }
+      .actions .button { width: 100%; }
+    }
+    @media (max-width: 900px) {
+      .areas-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .areas-section .section-head { margin-bottom: 1.6rem; }
+      .booking-wrap { width: min(100% - 2rem, 760px); grid-template-columns: 1fr; gap: 2rem; }
+      .booking-copy h2, .booking-copy > p { max-width: 760px; }
+      .assessment-section { grid-template-columns: 1fr; min-height: 0; }
+      .assessment-photo { grid-row: 2; min-height: 0; aspect-ratio: 4 / 3; }
+      .assessment-photo img { min-height: 0; }
+      .assessment-content { grid-row: 1; width: min(100%, 820px); margin-inline: auto; padding: 3.25rem 1.5rem 2.75rem; }
+      .footer-strip-inner { width: min(100% - 2rem, 760px); min-height: 0; align-items: flex-start; flex-direction: column; gap: .75rem; padding: 1.1rem 0; }
+      .footer-strip-links { justify-content: flex-start; flex-wrap: wrap; gap: .5rem 1.1rem; }
+    }
+    @media (max-width: 620px) {
+      .footer-strip-inner { width: min(100% - 1.5rem, 580px); padding: .95rem 0; }
+      .footer-strip-copy { font-size: .88rem; }
+      .footer-strip-links { gap: .45rem .9rem; }
+      .footer-strip-links a { font-size: .82rem; }
+      .booking-section { padding-block: 3.5rem; }
+      .booking-wrap { width: min(100% - 1.5rem, 580px); gap: 1.5rem; }
+      .booking-copy h2 { font-size: clamp(2.55rem, 10vw, 3.5rem); }
+      .booking-card { padding: 1.2rem; border-radius: 17px; }
+      .booking-link { min-height: 60px; padding-inline: 1rem; font-size: 1.2rem; }
+      .assessment-content { padding: 2.6rem 1.1rem 2.1rem; }
+      .assessment-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
+      .assessment-observes li { min-height: 64px; font-size: clamp(1.1rem, 5vw, 1.35rem); }
+      .assessment-audience { column-gap: .35rem; font-size: .9rem; }
+      .assessment-audience-items { column-gap: .4rem; }
     }
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation: none !important; }
     }
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="#inicio" aria-label="Josineide Belisário Xavier Barela, início">
-        <span class="brand-mark" aria-hidden="true">JB</span>
-        <span class="brand-name">Josineide Belisário Xavier Barela</span>
+      <a class="brand" href="#inicio" aria-label="JB Consultoria e Bem-Estar, início">
+        <span class="brand-name">JB Consultoria &amp; Bem-Estar<small>Josineide Belisário Xavier Barela</small></span>
       </a>
       <nav aria-label="Navegação principal">
-        <a href="#quem-somos">Quem somos</a>
+        <a href="#avaliacao">Avaliação</a>
+        <a href="#areas">Áreas</a>
         <a href="#especialista">Especialista</a>
-        <a href="#atuacao">Atuação</a>
-        <a href="#publico">Para quem</a>
-        <a href="#contato">Contato</a>
+        <a class="button header-cta" href="https://wa.me/558488780296?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+      <defs>
+        <clipPath id="heroPhotoClip" clipPathUnits="objectBoundingBox">
+          <path d="M.61 0 C.58 0 .57 .08 .56 .16 C.54 .35 .48 .52 .44 .68 C.41 .82 .4 .93 .41 1 H1 V0 Z"/>
+        </clipPath>
+        <clipPath id="aboutPhotoClip" clipPathUnits="objectBoundingBox">
+          <path d="M.41 0 C.405 .08 .38 .13 .38 .23 C.38 .4 .415 .5 .445 .6 C.48 .72 .5 .88 .49 1 H1 V0 Z"/>
+        </clipPath>
+        <clipPath id="aboutMobilePhotoClip" clipPathUnits="objectBoundingBox">
+          <path d="M0 0 C.18 .03 .32 .15 .52 .16 C.7 .17 .84 .03 1 .04 V1 H0 Z"/>
+        </clipPath>
+      </defs>
+    </svg>
     <section class="hero" id="inicio">
       <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Aprendizagem · desenvolvimento · bem-estar</p>
-          <h1>Transformando aprendizagem, desenvolvimento humano e <em>bem-estar</em></h1>
-          <p class="hero-copy">Uma atuação ética, científica e personalizada para apoiar pessoas, famílias, escolas e organizações.</p>
-          <p class="hero-services">Consultoria Educacional <span aria-hidden="true">•</span> Psicopedagogia <span aria-hidden="true">•</span> Neuropsicopedagogia <span aria-hidden="true">•</span> Desenvolvimento Humano <span aria-hidden="true">•</span> Saúde Mental Corporativa</p>
-          <div class="actions">
-            <a class="button" href="https://wa.me/558488780296?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar Atendimento</a>
-            <a class="button secondary" href="mailto:jbconsultoriaebemestar@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20consultoria">Solicitar Consultoria</a>
+        <div class="hero-panel">
+          <h1 class="hero-title reveal-hero">
+            <span class="hero-line">Compreender</span>
+            <span class="hero-line">abre caminhos.</span>
+          </h1>
+          <p class="hero-copy reveal-hero">Avaliação e acompanhamento psicopedagógico para crianças, adolescentes e adultos.</p>
+          <div class="hero-actions">
+            <a class="button reveal-hero" href="#areas">Conheça meu trabalho <span class="hero-button-arrow" aria-hidden="true">→</span></a>
           </div>
         </div>
-        <div class="hero-visual">
-          <img class="hero-photo" src="./ambiente-atendimento.png" alt="Ambiente acolhedor de atendimento e aprendizagem" width="1536" height="1024">
-          <div class="visual-note">Cada percurso de aprendizagem merece atenção própria.</div>
+        <figure class="hero-photo-wrap">
+          <div class="hero-photo-frame">
+            <img class="hero-photo" src="./josineide-profissional.png" alt="Josineide Belisário Xavier Barela em seu ambiente de trabalho" width="1024" height="1024" fetchpriority="high" decoding="async">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about-page" id="sobre">
+      <div class="about-stage">
+        <figure class="about-photo-wrap">
+          <img class="about-scene" src="./about-paper.jpg" alt="" width="1672" height="941" loading="eager" decoding="async">
+        </figure>
+        <svg class="about-route-desktop" viewBox="0 0 1440 640" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 58 C40 38 78 38 118 58 C158 78 220 90 270 78 C320 66 365 42 410 42 C455 42 485 72 520 70 C555 68 555 53.4 570 60.1"/>
+        </svg>
+        <div class="about-copy reveal-group">
+          <p class="eyebrow about-eyebrow reveal-item">Sobre</p>
+          <h2 class="about-title reveal-item">Um cuidado que<br>começa pela escuta.</h2>
+          <p class="about-lede reveal-item">Conhecer cada história é o primeiro passo para compreender necessidades e construir caminhos possíveis.</p>
+        </div>
+      </div>
+      <div class="about-rail">
+        <div class="about-rail-inner">
+          <div class="life-stages reveal-group" aria-label="Etapas da vida acompanhadas">
+            <span class="life-stage reveal-item">Infância</span>
+            <span class="life-stage reveal-item">Adolescência</span>
+            <span class="life-stage reveal-item">Vida adulta</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section tint" id="quem-somos">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Quem somos</p>
-          <h2>Conhecimento que acolhe e orienta</h2>
-          <p class="section-intro">Uma atuação que conecta educação, saúde e desenvolvimento humano, respeitando a história e as necessidades de cada pessoa e instituição.</p>
+    <section class="section profile-section" id="especialista">
+      <svg class="profile-route" viewBox="0 0 1600 700" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-20 395 C100 395 90 600 365 600 C650 600 760 570 900 380 C1025 210 1060 145 1220 205 C1370 260 1450 70 1590 42"/>
+      </svg>
+      <div class="wrap profile-grid reveal-group">
+        <div class="profile-intro reveal-item">
+          <p class="eyebrow">Conheça a especialista</p>
+          <h2 class="profile-title">Josineide Belisário<span class="profile-title-lastline"> Xavier Barela</span></h2>
+          <p class="profile-note">O acompanhamento considera a história de aprendizagem e, quando pertinente, envolve a família ou a escola.</p>
         </div>
-        <div class="intro-grid">
-          <div>
-            <p class="story">Pedagoga e especialista em Psicopedagogia e Neuropsicopedagogia, Josineide integra diferentes perspectivas para apoiar a aprendizagem e o desenvolvimento. Seu trabalho alcança crianças, famílias, escolas, empresas e profissionais da educação.</p>
-            <div class="sectors" aria-label="Áreas de atuação">
-              <span class="sector">Educação</span><span class="sector">Saúde</span><span class="sector">Empresas</span><span class="sector">Formação de profissionais</span>
+        <article class="profile-sheet reveal-item" aria-label="Formação e atuação profissional">
+          <section class="profile-group">
+            <h3 class="profile-group-title">Formação</h3>
+            <ul class="credentials">
+              <li>Pedagoga</li>
+              <li>Especialista em Psicopedagogia</li>
+              <li>Especialista em Neuropsicopedagogia</li>
+              <li>Mestranda em Ciências da Saúde</li>
+            </ul>
+          </section>
+          <section class="profile-group">
+            <h3 class="profile-group-title">Atividade</h3>
+            <ul class="credentials">
+              <li>Consultora Educacional</li>
+              <li>Consultora em Saúde Mental Corporativa</li>
+              <li>Neurodisciplina Consciente</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-details" id="atuacao">
+      <div class="wrap about-details-inner reveal-group">
+        <div class="about-details-intro reveal-item">
+          <p class="eyebrow">Atuação</p>
+          <h2 class="about-details-title">Um olhar atento<br>para cada trajetória.</h2>
+          <p class="story">Educação, saúde, empresas e formação de profissionais. Uma atuação que começa pela escuta e respeita cada percurso.</p>
+        </div>
+        <div class="pillars-stage reveal-item">
+          <svg class="pillar-thread" viewBox="0 0 900 360" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 244 C110 244 162 58 296 58 C355 58 360 132 420 132 C500 132 536 173 603 173 C700 173 773 88 900 88"/>
+            <circle cx="296" cy="58" r="5"/><circle cx="603" cy="173" r="5"/>
+          </svg>
+          <div class="pillars">
+            <article class="pillar"><h3>Missão</h3><p>Identificar barreiras à aprendizagem e orientar apoios.</p></article>
+            <article class="pillar"><h3>Visão</h3><p>Ampliar o acesso a práticas educacionais inclusivas.</p></article>
+            <article class="pillar"><h3>Valores</h3><p>Ética, ciência, escuta e respeito.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="assessment-section" id="avaliacao">
+      <figure class="assessment-photo">
+        <img src="./avaliacao-caderno.png" alt="" width="1122" height="1402" loading="lazy" decoding="async">
+      </figure>
+      <div class="assessment-content reveal-group">
+        <p class="eyebrow assessment-eyebrow reveal-item">Avaliação neuropsicopedagógica</p>
+        <h2 class="assessment-title reveal-item">Entender como cada pessoa aprende.</h2>
+        <p class="assessment-copy reveal-item">A avaliação observa diferentes aspectos da aprendizagem para orientar os próximos passos.</p>
+        <ul class="assessment-observes reveal-item" aria-label="Aspectos observados na avaliação">
+          <li>Aprendizagem</li>
+          <li>Atenção</li>
+          <li>Memória</li>
+          <li>Funções executivas</li>
+        </ul>
+        <div class="assessment-audience reveal-item">
+          <p class="assessment-audience-label">Público atendido</p>
+          <p class="assessment-audience-items">Crianças <span aria-hidden="true">·</span> Adolescentes <span aria-hidden="true">·</span> Adultos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section areas-section" id="areas">
+      <div class="areas-wrap">
+        <div class="areas-layout">
+          <div class="areas-people">
+            <div class="section-head reveal-group">
+              <p class="eyebrow reveal-item">Áreas de atuação</p>
+              <h2 class="reveal-item">Serviços para pessoas e instituições</h2>
+            </div>
+            <div class="areas-people-heading reveal-group"><h3 class="reveal-item">Para pessoas</h3></div>
+            <div class="areas-people-grid reveal-group">
+              <article class="area-item reveal-item"><h4>Psicopedagogia</h4><p>Avaliação · Intervenção · Orientação familiar · Orientação escolar</p></article>
+              <article class="area-item reveal-item"><h4>Neuropsicopedagogia</h4><p>Avaliação · Estimulação cognitiva · Funções executivas · Atenção, memória e linguagem · Metacognição</p></article>
+              <article class="area-item reveal-item"><h4>Desenvolvimento Infantil</h4><p>Dificuldades de aprendizagem e desenvolvimento.</p></article>
+              <article class="area-item reveal-item"><h4>Orientação Familiar</h4><p>Estratégias · rotina · limites · escola.</p></article>
             </div>
           </div>
-          <div class="pillars">
-            <article class="pillar"><h3>Missão</h3><p>Transformar aprendizagem e desenvolvimento com cuidado, conhecimento e orientação individualizada.</p></article>
-            <article class="pillar"><h3>Visão</h3><p>Contribuir para ambientes mais inclusivos, saudáveis e favoráveis ao desenvolvimento.</p></article>
-            <article class="pillar"><h3>Valores</h3><p>Ética, ciência, respeito às diferenças e compromisso com cada trajetória.</p></article>
-          </div>
+          <aside class="areas-institutions reveal-group" aria-labelledby="areas-institutions-title">
+            <h3 id="areas-institutions-title" class="reveal-item">Para instituições</h3>
+            <div class="areas-institution-list reveal-group">
+              <article class="area-item reveal-item"><h4>Consultoria Educacional</h4><p>Formação docente · Inclusão · Planejamento e BNCC · Acompanhamento escolar</p></article>
+              <article class="area-item reveal-item"><h4>Consultoria Empresarial</h4><p>Saúde mental e NR-1 · Qualidade de vida · Gestão emocional · Palestras e treinamentos</p></article>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="section" id="especialista">
-      <div class="wrap profile">
-        <div class="profile-card" aria-label="Identidade visual de Josineide Belisário Xavier Barela">
-          <span class="initials" aria-hidden="true">JB</span>
-          <p>Educação, aprendizagem e bem-estar</p>
-        </div>
-        <div>
-          <p class="eyebrow">Conheça a especialista</p>
-          <h2>Josineide Belisário Xavier Barela</h2>
-          <p class="section-intro">Pedagoga, consultora educacional e consultora em saúde mental corporativa, com atuação em aprendizagem, desenvolvimento humano e Neurodisciplina Consciente.</p>
-          <ul class="credentials">
-            <li>Pedagoga</li>
-            <li>Especialista em Psicopedagogia</li>
-            <li>Especialista em Neuropsicopedagogia</li>
-            <li>Mestranda em Ciências da Saúde</li>
-            <li>Consultora Educacional</li>
-            <li>Consultora em Saúde Mental Corporativa</li>
-            <li>Neurodisciplina Consciente</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section tint" id="atuacao">
+    <section class="section" id="atendimentos">
       <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Áreas de atuação</p>
-          <h2>Apoio para diferentes etapas e contextos</h2>
+        <div class="section-head reveal-group">
+          <p class="eyebrow reveal-item">Como funciona</p>
+          <h2 class="reveal-item">Presencial, online e institucional</h2>
         </div>
-        <div class="areas-grid">
-          <article class="area">
-            <span class="area-number">01</span><h3>Psicopedagogia</h3>
-            <ul><li>Avaliação psicopedagógica</li><li>Intervenção psicopedagógica</li><li>Orientação familiar</li><li>Orientação escolar</li><li>Habilidades de aprendizagem</li><li>Plano de intervenção</li></ul>
-          </article>
-          <article class="area">
-            <span class="area-number">02</span><h3>Neuropsicopedagogia</h3>
-            <ul><li>Avaliação neuropsicopedagógica</li><li>Estimulação cognitiva</li><li>Metacognição</li><li>Funções executivas</li><li>Atenção e memória</li><li>Linguagem</li></ul>
-          </article>
-          <article class="area">
-            <span class="area-number">03</span><h3>Consultoria Educacional</h3>
-            <ul><li>Formação docente</li><li>Educação inclusiva</li><li>Acompanhamento institucional</li><li>Planejamento pedagógico</li><li>BNCC e capacitação</li><li>Projetos pedagógicos</li><li>Protocolos de inclusão</li></ul>
-          </article>
-          <article class="area">
-            <span class="area-number">04</span><h3>Consultoria Empresarial</h3>
-            <ul><li>Saúde mental</li><li>NR-1</li><li>Qualidade de vida e bem-estar</li><li>Palestras e treinamentos</li><li>Desenvolvimento humano</li><li>Gestão emocional</li></ul>
-          </article>
-          <article class="area">
-            <span class="area-number">05</span><h3>Desenvolvimento Infantil</h3>
-            <p>Atendimento para crianças com dificuldades de aprendizagem, considerando suas necessidades e seu contexto.</p>
-          </article>
-          <article class="area">
-            <span class="area-number">06</span><h3>Orientação Familiar</h3>
-            <p>Apoio aos pais com estratégias para o dia a dia, organização de rotinas, limites e desenvolvimento.</p>
-          </article>
+        <div class="grid-4 reveal-group">
+          <article class="glass-card format-card reveal-item"><h3>Presencial</h3><p>Horário e endereço pelo WhatsApp.</p></article>
+          <article class="glass-card format-card reveal-item"><h3>Online</h3><p>Formato combinado conforme a demanda.</p></article>
+          <article class="glass-card format-card reveal-item"><h3>Consultoria</h3><p>Proposta alinhada à instituição.</p></article>
+          <article class="glass-card format-card reveal-item"><h3>Palestras</h3><p>Tema e público definidos em conjunto.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section dark" id="publico">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow" style="color: var(--lime)">Para quem é o atendimento</p>
-          <h2>Um trabalho pensado para pessoas e equipes</h2>
-          <p class="section-intro">O acompanhamento e as consultorias são orientados pelo contexto, pelos objetivos e pelas necessidades de cada público.</p>
-          <div class="audience"><span>Famílias</span><span>Crianças</span><span>Adolescentes</span><span>Adultos</span><span>Escolas</span><span>Empresas</span><span>Profissionais da Educação</span></div>
+    <section class="section principles-section" id="diferenciais">
+      <div class="principles-wrap reveal-group">
+        <div class="principles-intro reveal-item">
+          <p class="eyebrow">Diferenciais</p>
+          <h2>Princípios do trabalho</h2>
+          <p>Uma prática que reúne escuta, conhecimento e parceria.</p>
+        </div>
+        <div class="qualities reveal-group">
+          <article class="quality reveal-item"><h3>Atendimento individualizado</h3></article>
+          <article class="quality reveal-item"><h3>Base científica</h3></article>
+          <article class="quality reveal-item"><h3>Parceria com a família</h3></article>
+          <article class="quality reveal-item"><h3>Diálogo com a escola</h3></article>
+          <article class="quality reveal-item"><h3>Ética e privacidade</h3></article>
+          <article class="quality reveal-item"><h3>Experiência em educação</h3></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contato">
-      <div class="wrap contact">
-        <div><p class="eyebrow">Próximo passo</p><h2>Vamos conversar?</h2><p>Para agendar um atendimento ou solicitar uma consultoria, entre em contato e conte um pouco sobre o que você precisa.</p><p style="margin:.9rem 0 0;font-size:.92rem"><a href="https://wa.me/558488780296" target="_blank" rel="noopener">+55 84 8878-0296</a> <span aria-hidden="true">·</span> <a href="mailto:jbconsultoriaebemestar@gmail.com">jbconsultoriaebemestar@gmail.com</a></p></div>
-        <div class="actions"><a class="button" href="https://wa.me/558488780296?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar Atendimento</a><a class="button secondary" href="mailto:jbconsultoriaebemestar@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20consultoria">Solicitar Consultoria</a></div>
+    <section class="section booking-section" id="servicos">
+      <div class="booking-wrap reveal-group">
+        <div class="booking-copy reveal-item">
+          <div class="booking-eyebrow"><p class="eyebrow">Agendamento</p></div>
+          <h2>Vamos conversar sobre o próximo passo?</h2>
+          <p>Tire suas dúvidas e combine um atendimento pelo WhatsApp.</p>
+        </div>
+        <div class="booking-card reveal-item">
+          <a class="booking-link" href="https://wa.me/558488780296?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20os%20servi%C3%A7os%20e%20agendar%20um%20atendimento." target="_blank" rel="noopener">Conversar no WhatsApp <span aria-hidden="true">↗</span></a>
+          <p class="booking-card-note">Atendimento a pessoas, famílias, escolas e empresas.</p>
+        </div>
       </div>
     </section>
+
   </main>
-  <footer><div class="wrap footer-inner"><p>Josineide Belisário Xavier Barela</p><p>Aprendizagem, desenvolvimento humano e bem-estar.</p></div></footer>
+
+  <footer id="rodape">
+    <div class="footer-strip-inner">
+      <p class="footer-strip-copy">© 2026 JB Consultoria &amp; Bem-Estar · Josineide Belisário Xavier Barela</p>
+      <nav class="footer-strip-links" aria-label="Links do rodapé">
+        <a href="#avaliacao">Avaliação</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Atuação</a>
+        <a href="#servicos">Serviços</a>
+        <a href="https://wa.me/558488780296?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20os%20servi%C3%A7os%20e%20agendar%20um%20atendimento." target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/josineide_neuropsicopedagoga/" target="_blank" rel="noopener">Instagram</a>
+        <a class="footer-strip-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script>
+    (() => {
+      function iniciarAnimacoes() {
+        if (!window.gsap || !window.ScrollTrigger) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const elementosHero = gsap.utils.toArray(".reveal-hero");
+        if (elementosHero.length) {
+          gsap.from(elementosHero, {
+            autoAlpha: 0,
+            y: 30,
+            duration: 1.2,
+            stagger: 0.2,
+            ease: "power2.out"
+          });
+        }
+
+        gsap.utils.toArray(".reveal-group").forEach((grupo) => {
+          const elementos = Array.from(grupo.children).filter((elemento) =>
+            elemento.classList.contains("reveal-item")
+          );
+          if (!elementos.length) return;
+
+          gsap.from(elementos, {
+            autoAlpha: 0,
+            y: 30,
+            duration: 0.9,
+            stagger: 0.15,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: grupo,
+              start: "top 80%",
+              once: true
+            }
+          });
+        });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", iniciarAnimacoes, { once: true });
+      } else {
+        iniciarAnimacoes();
+      }
+    })();
+  </script>
 </body>
 </html>
