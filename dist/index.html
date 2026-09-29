@@ -111,7 +111,7 @@
     .booking-card { padding: clamp(1.4rem, 2.8vw, 2.7rem); border-radius: 20px; background: #f7f5ee; box-shadow: 0 18px 48px rgba(9,26,17,.14); }
     .booking-link { display: flex; min-height: 76px; align-items: center; justify-content: center; gap: .65rem; padding: 1rem 1.5rem; border-radius: 999px; background: #254332; color: #fffdf7; font: 400 clamp(1.15rem, 1.6vw, 1.55rem)/1.2 var(--serif); text-align: center; text-decoration: none; transition: background .18s ease, transform .18s ease; }
     .booking-link:hover { transform: translateY(-1px); background: #183729; }
-    .booking-link span { font: 400 1.15em/1 var(--sans); }
+    .booking-link-arrow { width: 1em; height: 1em; flex: 0 0 auto; }
     .booking-card-note { margin: 1.15rem 0 0; padding-top: 1rem; border-top: 1px solid rgba(93,111,89,.25); color: #526257; font-size: .98rem; line-height: 1.5; text-align: center; }
     .principles-section { position: relative; isolation: isolate; overflow: hidden; background: #f7f6f1; }
     .principles-section::before { position: absolute; z-index: -1; inset: -24px; background: linear-gradient(rgba(248,247,241,.72), rgba(248,247,241,.72)), url('./avaliacao-caderno.png') center 8% / cover no-repeat; content: ''; filter: blur(18px); opacity: .48; pointer-events: none; }
@@ -568,7 +568,7 @@
           <p>Tire suas dúvidas e combine um atendimento pelo WhatsApp.</p>
         </div>
         <div class="booking-card reveal-item">
-          <a class="booking-link" href="https://wa.me/558488780296?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20os%20servi%C3%A7os%20e%20agendar%20um%20atendimento." target="_blank" rel="noopener">Conversar no WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="booking-link" href="https://wa.me/558488780296?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20os%20servi%C3%A7os%20e%20agendar%20um%20atendimento." target="_blank" rel="noopener">Conversar no WhatsApp <svg class="booking-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
           <p class="booking-card-note">Atendimento a pessoas, famílias, escolas e empresas.</p>
         </div>
       </div>
